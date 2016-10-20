@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <div class="container">
+      <h2>List of all tickets</h2>
+      
+      <table class="table"> 
+        <tr>
+          <th>Building Number</th>
+          <th>Street</th>
+          <th>Borough</th>
+          <th>Date</th>
+          <th>Time</th>
+          <th>Ticket #</th>
+          <th>Amount</th>
+          <th>Status</th>
+        <tr>
+        {{#tickets}}
+          <tr>
+          <td>{{violation_location_house}}</td>
+          <td>{{violation_location_street_name}}</td>
+          <td>{{violation_location_borough}}</td>
+          <td>{{violation_date}}</td>
+          <td>{{violation_time}}</td>
+          <td>{{ticket_number}}</td>
+          <td>{{total_violation_amount}}</td>
+          <td>{{compliance_status}}</td>
+          </tr>
+        {{/tickets}}
+      </table>
+    </div>
+  </body>
+</html>

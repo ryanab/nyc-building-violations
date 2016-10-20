@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron">
+        <h1>Welcome to NYC Violations Ticket Check</h1>
+        <form method="post" action="/">
+          <div class="form-group">
+            <label for="respondent_first_name"/>First Name</label>
+            <input type="text" name="respondent_first_name" class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="respondent_last_name"/>Last Name</label>
+            <input type="text" name="respondent_last_name" class="form-control">
+          </div>
+            <button type="submit" class="btn btn-primary">Search</button>
+          <div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
